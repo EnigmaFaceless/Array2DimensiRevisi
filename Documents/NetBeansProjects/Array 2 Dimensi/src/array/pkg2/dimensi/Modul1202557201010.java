@@ -29,11 +29,19 @@ public class Modul1202557201010 {
           System.out.println("jumlah adalah: "+jumlah);
           System.out.println("ratarata adalah : "+ratarata);
           
+          int totalGanjil= 0;
+             for (int a = 0; a<angka.length; a++){
+          for ( int b = 0; b < angka[a].length; b++){
+              if (b%2 != 0){
+              totalGanjil +=angka [a][b];
+              }
+          }
+             }
           int cari = Integer.parseInt(
-                  JOptionPane.showInputDialog("Masukkan angka yang ingin dicari : "));
+                  JOptionPane.showInputDialog("Mau cari angka apa?? : "));
           
           int angkaBaru = Integer.parseInt(
-                  JOptionPane.showInputDialog("Masukkan angka baru yang ingin dicari : "));
+                  JOptionPane.showInputDialog("Mau ganti cari angka baru apa?? : "));
          
           boolean ketemu = false;
           
@@ -58,15 +66,8 @@ public class Modul1202557201010 {
               System.out.print(angka[a][b] +" ");
           }
                  System.out.println("");
-    }
-             int totalGanjil= 0;
-             for (int a = 0; a<angka.length; a++){
-          for ( int b = 0; b < angka[a].length; b++){
-              if (b%2 != 0){
-              totalGanjil +=angka [a][b];
-          }
-}
-}
-             System.out.println("Jumlah Index kolom ganjil Setelah Array Dirubah yaitu : " + totalGanjil);
+             }
+             System.out.println("Jumlah Index kolom ganjil yaitu : " + totalGanjil);
     }
 }
+    
